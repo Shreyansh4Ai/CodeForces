@@ -13,3 +13,6 @@ int main(){
     }
      return 0;
 }
+//learning --->>>>> how to get the qoutient +1 in division and dealing with size/area when your doing things on the basis of perimeter 
+// total = length + breadths checks for perimeter wrongly if asked area then alwAYS do multiply ...
+// to get the desired output i can also use celi but it works perfectly on double type so its not useful here 
