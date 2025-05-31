@@ -16,6 +16,6 @@ int main() {
         x.front() = '9';
     }
  
-    cout << x << endl;
+      cout << x << endl;
     return 0;
 }
