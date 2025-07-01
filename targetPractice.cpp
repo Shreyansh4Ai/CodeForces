@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
- int t ;                     // logical error fix it 
+ int t ;                     // logical error fix it  
  cin>> t ;
  while(t--){
    
