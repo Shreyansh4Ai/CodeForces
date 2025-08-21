@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+
+    string vowels = "aoyeui";
+    string result = "";
+
+    for (char c : s) {
+        c = tolower(c); // step 3: lowercase
+        if (vowels.find(c) == string::npos) { // step 1: not a vowel
+            result += '.'; 
+            result += c; // step 2: add consonant with dot
+        }
+    }
+
+    cout << result << "\n";
+    return 0;
+}
