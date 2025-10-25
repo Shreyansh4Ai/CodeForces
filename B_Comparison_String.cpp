@@ -1,33 +1,41 @@
-#include<bits/stdc++.h>
-using namespace std ;
+#include <bits/stdc++.h>
+using namespace std;
 
-int main(){
+int main()
+{
+	int t; 
+	cin >> t;
+	while (t--)
+	{
+		long long n; 
+		cin >> n;
+		string s;
+		cin >> s;
 
-    int  t ;
-    cin>> t ;
-    while(t--){
-        int n ;
-        cin >> n; 
-        string s ;
-        cin >> s;
-      int grt = 0 ;
-      int lsr = 0 ;
-        for(int i = 0 ; i<n ; i++){
+		long long longest_substring_length = 1;
+		long long current_substring_length = 1;
 
-          if(s[i] == '>'){
-            grt++;
-            lsr = 0 ;
-          }else{
-            lsr++;
-            grt=0;
-          }
+		
+		for (int i = 1; i < n; i++) 
+		{
+			if (s[i] == s[i - 1])
+				current_substring_length++;
+			else
+			{
+				
+				longest_substring_length =
+					max(longest_substring_length, current_substring_length);
+				current_substring_length = 1;
+			}
+		}
 
-        }
+		
+		longest_substring_length =
+			max(longest_substring_length, current_substring_length);
 
-         int ans = max(grt , lsr );
-         cout << ans+1 << endl;
+	
+		cout << longest_substring_length + 1 << endl;
+	}
+	return 0;
+}
 
-    }
-
-
-}          
