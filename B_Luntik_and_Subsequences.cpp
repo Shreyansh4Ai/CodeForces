@@ -26,7 +26,7 @@ int main(){
         else if(a[i] == 1) cnt_one++ ; 
     }
 
-   int ans = pow(2,cnt_zero) * cnt_one ; 
+   ll ans = pow(2,cnt_zero) * cnt_one ; 
    cout <<ans<<endl;
 
 
