@@ -22,11 +22,11 @@ int main(){
 
             sum+=a[i];
             
-            max += ceil((double)a[i]/n); // always use double with ceil ;
+            max += ceil((double)a[i]/x); // always use double with ceil ;
 
          }
-
-         cout<< sum/n <<" "<<max <<endl;
+           ll min = ceil((double)sum/x);
+           cout<<min<<" "<<max <<endl;
 
     }
 }
